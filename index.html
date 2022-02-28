@@ -5,17 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    
     <!-- Normalize -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
-    <!-- Slick carousell -->
     
-    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
-
-
-
     <!-- Font Lato e Playfair Display -->
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,10 +19,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
 
+    
     <!-- Hamburger menu -->
+
     <link href="css/hamburgers.css" rel="stylesheet">
 
+
     <!-- Foglio di stle -->
+
     <link rel="stylesheet" href="css/style.css">
 
     <title>Hotel Baby</title>
@@ -149,38 +148,30 @@
                 <h2 class="service__title__text">La tua vacanza con noi</h2>
             </div>
 
-    <!--    <div class="wrap">  
+            <div class="service__slider">
 
-                <div class="slider">
-                
-                <div class="item">
-                    <img src="img/servizi/camere.jpg" alt="">
-                    <h3 class="item__title">camere</h3>
-                </div>
-                <div class="item">
-                    <img src="img/servizi/colazione.JPG" alt="">
-                    <h3 class="item__title">colazione</h3>
-                </div>
-                <div class="item">
-                    <img src="img/servizi/dog.jpg" alt="">
-                    <h3 class="item__title">Animali</h3>
-                </div>
-                <div class="item">
-                    <img src="img/servizi/mare.jpg" alt="">
-                    <h3 class="item__title">Mare</h3>
-                </div>
-                <div class="item">
-                    <img src="img/servizi/relax.JPG" alt="">
-                    <h3 class="item__title">relax</h3>
-                </div>
-                <div class="item">
-                    <img src="img/servizi/ristorante.jpg" alt="">
-                    <h3 class="item__title">ristorante</h3>
-                </div>
-                
+                <button class="next__slide__btn"></button>
+                <button class="prev__slide__btn"></button>
+
+                <div class="service__slider__wrapper">
+
+                    <div class="service__slider__items"> <img src="../Hotel_baby_2022/img/servizi/camere.jpg" alt="Camere"> <h4 class="service__slider__items__title"> Camere </h4></div>
+                    <div class="service__slider__items"> <img src="../Hotel_baby_2022/img/servizi/ristorante.jpg" alt="Ristorante"> <h4 class="service__slider__items__title"> Ristorante </h4></div>
+                    <div class="service__slider__items"> <img src="../Hotel_baby_2022/img/servizi/colazione.JPG" alt="Colazione"> <h4 class="service__slider__items__title"> Colazione </h4></div>
+                    <div class="service__slider__items"> <img src="../Hotel_baby_2022/img/servizi/mare.jpg" alt="Mare"> <h4 class="service__slider__items__title"> Mare </h4></div>
+                    <div class="service__slider__items"> <img src="../Hotel_baby_2022/img/servizi/relax.JPG" alt="Esperienze"> <h4 class="service__slider__items__title"> Esperienze </h4></div>
+                    <div class="service__slider__items"> <img src="../Hotel_baby_2022/img/servizi/dog.jpg" alt="Animali"> <h4 class="service__slider__items__title"> Animali </h4></div>
+
+                    <div class="service__slider__items"> <img src="../Hotel_baby_2022/img/servizi/camere.jpg" alt="Camere"> <h4 class="service__slider__items__title"> Camere </h4></div>
+                    <div class="service__slider__items"> <img src="../Hotel_baby_2022/img/servizi/ristorante.jpg" alt="Ristorante"> <h4 class="service__slider__items__title"> Ristorante </h4></div>
+                    <div class="service__slider__items"> <img src="../Hotel_baby_2022/img/servizi/colazione.JPG" alt="Colazione"> <h4 class="service__slider__items__title"> Colazione </h4></div>
+                    <div class="service__slider__items"> <img src="../Hotel_baby_2022/img/servizi/mare.jpg" alt="Mare"> <h4 class="service__slider__items__title"> Mare </h4></div>
+                    <div class="service__slider__items"> <img src="../Hotel_baby_2022/img/servizi/relax.JPG" alt="Esperienze"> <h4 class="service__slider__items__title"> Esperienze </h4></div>
+                    <div class="service__slider__items"> <img src="../Hotel_baby_2022/img/servizi/dog.jpg" alt="Animali"> <h4 class="service__slider__items__title"> Animali </h4></div>
+
                 </div>
 
-            </div>  --> 
+            </div>
 
             <section class="carousel">
                 <div class="carousel__wrapper">
@@ -341,6 +332,7 @@
 
 
     </script>
+
     <script>
 
             var $hamburger = $(".hamburger");
@@ -349,44 +341,6 @@
             // Do something else, like open/close menu
             });
 
-    </script>
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-
-    <script>
-
-
-        $( document ).ready(function() {    
-                $('.slider').slick({
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    arrows: true,
-                    dots: false,
-                    centerMode: true,
-                    variableWidth: true,
-                    infinite: true,
-                    focusOnSelect: true,
-                    cssEase: 'linear',
-                    touchMove: true,
-                    prevArrow:'<button class="slick-prev"> < </button>',
-                    nextArrow:'<button class="slick-next"> > </button>',
-                });              
-                
-                var imgs = $('.slider img');
-                imgs.each(function(){
-                    var item = $(this).closest('.item');
-                    item.css({
-                    'background-image': 'url(' + $(this).attr('src') + ')', 
-                    'background-position': 'center',            
-                    '-webkit-background-size': 'cover',
-                    'background-size': 'cover', 
-                    });
-                    $(this).hide();
-                });
-
-        });
-            
     </script>
 
 </body>
