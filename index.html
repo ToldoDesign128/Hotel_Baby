@@ -1,0 +1,393 @@
+<html lang="it">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Normalize -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- Slick carousell -->
+    
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+
+
+
+    <!-- Font Lato e Playfair Display -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Hamburger menu -->
+    <link href="css/hamburgers.css" rel="stylesheet">
+
+    <!-- Foglio di stle -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Hotel Baby</title>
+
+</head>
+<body>
+
+    <!-- Menu -->   
+
+    <header class="menu">      
+
+        <nav>
+
+                    <h5 class="menu__logo">
+
+                        <a href="#" class="menu__logo__link">
+                            Hotel Baby
+                        </a>
+
+                    </h5>
+
+                    <ul class="menu__list">
+
+                        <li class="menu__list__item"> <a href="#" class="menu__list__link"> Ci presentiamo </a> </li>
+
+                        <li class="menu__list__item"> <a href="#" class="menu__list__link"> Servizi </a> </li>
+
+                        <li class="menu__list__item"> <a href="#" class="menu__list__link"> Pacchetti </a> </li>
+
+                        <li class="menu__list__item"> <a href="#" class="menu__list__link"> Galleria </a> </li>
+
+                        <li class="menu__list__item"> <a href="#" class="menu__list__link"> Prenota ora </a> </li>
+
+                    </ul>  
+
+        </nav>
+
+        <div class="menu__hamburger">
+
+            <button class="hamburger  hamburger--collapse" type="button">
+
+                <span class="hamburger-box">
+
+                <span class="hamburger-inner"></span>
+
+                </span>
+                
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- Hero --> 
+
+    <div class="hero">
+
+        <div class="fullscreen-video-wrap">
+
+            <video autoplay loop muted poster="../Hotel_baby_2022/img/hero_background.png" class="hero__video">
+                <source src="../Hotel_baby_2022/img/hero_background.mp4" type="video/mp4">
+                <source src="../Hotel_baby_2022/img/hero_background.webm" type="video/webm">
+                <source src="../Hotel_baby_2022/img/hero_background.ogv" type="video/ogv">
+            </video>
+
+        </div>
+
+        <div class="hero__content">
+                
+            <div class="hero__text">
+
+                <h1> Hotel Baby </h1>
+                <h4>Nel cuore di Milano Marittima a pochi passi dal mare</h4>
+
+            </div>
+
+
+            <div class="bottoni">
+
+                <button class="btn"> Chiedi un preventivo </button>
+
+                <button class="btn"> Prenota ora </button>
+
+            </div>
+
+        </div>
+            
+    </div>
+
+
+    <!-- Ci presentiamo --> 
+
+    <section class="poster">
+
+        <div class="poster__img"></div>
+
+        <div class="poster__text">
+
+            <h3 class="poster__title">Ci presentiamo</h3>
+
+            <p class="poster__content">In prestigiosa posizione centrale a Milano Marittima l’Hotel Baby si affaccia sul noto Viale 2 Giugno a pochi passi dalla spiaggia.</p>
+            <p class="poster__content">La struttura medio piccola offre un ottimo confort per quei viaggiatori che vogliono godersi un soggiorno in puro stile romagnolo accompagnati dal piacere di sentirsi a proprio agio.</p>
+            <p class="poster__content">La gestione è familiare e custodisce con passione questa struttura da ormai 20 anni. Il ristorante ubicato nella sala verandata al primo piano esprime un proprio concetto gastronomico romagnolo esaltando i sapori della tradizione e non solo.</p>
+            <p class="poster__content">Il nostro hotel è il punto di partenza ideale per chi vuole scoprire Milano Marittima con la comodità e l’accoglienza che ti fanno sentire a casa.</p>
+        
+        </div>
+
+    </section>
+
+    
+    <!-- Servizi --> 
+
+    <section class="service">
+
+        <div class="service__content">
+
+            <div class="service__title">
+                <h2 class="service__title__text">La tua vacanza con noi</h2>
+            </div>
+
+    <!--    <div class="wrap">  
+
+                <div class="slider">
+                
+                <div class="item">
+                    <img src="img/servizi/camere.jpg" alt="">
+                    <h3 class="item__title">camere</h3>
+                </div>
+                <div class="item">
+                    <img src="img/servizi/colazione.JPG" alt="">
+                    <h3 class="item__title">colazione</h3>
+                </div>
+                <div class="item">
+                    <img src="img/servizi/dog.jpg" alt="">
+                    <h3 class="item__title">Animali</h3>
+                </div>
+                <div class="item">
+                    <img src="img/servizi/mare.jpg" alt="">
+                    <h3 class="item__title">Mare</h3>
+                </div>
+                <div class="item">
+                    <img src="img/servizi/relax.JPG" alt="">
+                    <h3 class="item__title">relax</h3>
+                </div>
+                <div class="item">
+                    <img src="img/servizi/ristorante.jpg" alt="">
+                    <h3 class="item__title">ristorante</h3>
+                </div>
+                
+                </div>
+
+            </div>  --> 
+
+            <section class="carousel">
+                <div class="carousel__wrapper">
+            
+                    <div class="carousel__slide">
+                    <div class="carousel__image" ><img src="../Hotel_baby_2022/img/icon/aria_cond.png"></div>
+                    <h6 class="carousel__image__title">Aria condizionata</h6>
+                    </div>
+        
+                    <div class="carousel__slide">
+                    <div class="carousel__image" ><img src="../Hotel_baby_2022/img/icon/balcone.png"></div>
+                    <h6 class="carousel__image__title">Balcone</h6>
+                    </div>
+        
+                    <div class="carousel__slide">
+                    <div class="carousel__image" ><img src="../Hotel_baby_2022/img/icon/cassaforte.png"></div>
+                    <h6 class="carousel__image__title">Cassaforte</h6>
+                    </div>
+        
+                    <div class="carousel__slide">
+                    <div class="carousel__image" ><img src="../Hotel_baby_2022/img/icon/colazione.png"></div>
+                    <h6 class="carousel__image__title">Colazione</h6>
+                    </div>
+        
+                    <div class="carousel__slide">
+                    <div class="carousel__image" ><img src="../Hotel_baby_2022/img/icon/doccia.png"></div>
+                    <h6 class="carousel__image__title">Doccia</h6>
+                    </div>
+        
+                    <div class="carousel__slide">
+                    <div class="carousel__image" ><img src="../Hotel_baby_2022/img/icon/frico.png"></div>
+                    <h6 class="carousel__image__title">Frigorifero</h6>
+                    </div>
+
+                    <div class="carousel__slide">
+                    <div class="carousel__image" ><img src="../Hotel_baby_2022/img/icon/mare.png"></div>
+                    <h6 class="carousel__image__title">Mare</h6>
+                    </div>
+        
+                    <div class="carousel__slide">
+                    <div class="carousel__image" ><img src="../Hotel_baby_2022/img/icon/parcheggio.png"></div>
+                    <h6 class="carousel__image__title">Parcheggio</h6>
+                    </div>
+        
+                    <div class="carousel__slide">
+                    <div class="carousel__image" ><img src="../Hotel_baby_2022/img/icon/phon.png"></div>
+                    <h6 class="carousel__image__title">Phon</h6>
+                    </div>
+        
+                    <div class="carousel__slide">
+                    <div class="carousel__image" ><img src="../Hotel_baby_2022/img/icon/ristorante.png"></div>
+                    <h6 class="carousel__image__title">Ristorante</h6>
+                    </div>
+        
+                    <div class="carousel__slide">
+                    <div class="carousel__image" ><img src="../Hotel_baby_2022/img/icon/tv.png"></div>
+                    <h6 class="carousel__image__title">Televisione</h6>
+                    </div>
+        
+                    <div class="carousel__slide">
+                    <div class="carousel__image" ><img src="../Hotel_baby_2022/img/icon/wifi.png"></div>
+                    <h6 class="carousel__image__title">Wi-Fi</h6>
+                    </div>
+
+                    <div class="carousel__slide">
+                    <div class="carousel__image" ><img src="../Hotel_baby_2022/img/icon/aria_cond.png"></div>
+                    <h6 class="carousel__image__title">Aria condizionata</h6>
+                    </div>
+        
+                    <div class="carousel__slide">
+                    <div class="carousel__image" ><img src="../Hotel_baby_2022/img/icon/balcone.png"></div>
+                    <h6 class="carousel__image__title">Balcone</h6>
+                    </div>
+        
+                    <div class="carousel__slide">
+                    <div class="carousel__image" ><img src="../Hotel_baby_2022/img/icon/cassaforte.png"></div>
+                    <h6 class="carousel__image__title">Cassaforte</h6>
+                    </div>
+        
+                    <div class="carousel__slide">
+                    <div class="carousel__image" ><img src="../Hotel_baby_2022/img/icon/colazione.png"></div>
+                    <h6 class="carousel__image__title">Colazione</h6>
+                    </div>
+        
+                    <div class="carousel__slide">
+                    <div class="carousel__image" ><img src="../Hotel_baby_2022/img/icon/doccia.png"></div>
+                    <h6 class="carousel__image__title">Doccia</h6>
+                    </div>
+        
+                    <div class="carousel__slide">
+                    <div class="carousel__image" ><img src="../Hotel_baby_2022/img/icon/frico.png"></div>
+                    <h6 class="carousel__image__title">Frigorifero</h6>
+                    </div>
+
+                    <div class="carousel__slide">
+                    <div class="carousel__image" ><img src="../Hotel_baby_2022/img/icon/mare.png"></div>
+                    <h6 class="carousel__image__title">Mare</h6>
+                    </div>
+        
+                    <div class="carousel__slide">
+                    <div class="carousel__image" ><img src="../Hotel_baby_2022/img/icon/parcheggio.png"></div>
+                    <h6 class="carousel__image__title">Parcheggio</h6>
+                    </div>
+        
+                    <div class="carousel__slide">
+                    <div class="carousel__image" ><img src="../Hotel_baby_2022/img/icon/phon.png"></div>
+                    <h6 class="carousel__image__title">Phon</h6>
+                    </div>
+        
+                    <div class="carousel__slide">
+                    <div class="carousel__image" ><img src="../Hotel_baby_2022/img/icon/ristorante.png"></div>
+                    <h6 class="carousel__image__title">Ristorante</h6>
+                    </div>
+        
+                    <div class="carousel__slide">
+                    <div class="carousel__image" ><img src="../Hotel_baby_2022/img/icon/tv.png"></div>
+                    <h6 class="carousel__image__title">Televisione</h6>
+                    </div>
+        
+                    <div class="carousel__slide">
+                    <div class="carousel__image" ><img src="../Hotel_baby_2022/img/icon/wifi.png"></div>
+                    <h6 class="carousel__image__title">Wi-Fi</h6>
+                    </div>
+
+                    
+
+                </div>
+            </section>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!--Jquery-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+
+        $( document ).ready(function() {
+
+            // Open Panel
+
+            $('.hamburger').on('click', function() {
+                $(".menu").toggleClass("menu--open");
+            });
+
+        });
+
+
+    </script>
+    <script>
+
+            var $hamburger = $(".hamburger");
+            $hamburger.on("click", function(e) {
+                $hamburger.toggleClass("is-active");
+            // Do something else, like open/close menu
+            });
+
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script>
+
+
+        $( document ).ready(function() {    
+                $('.slider').slick({
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    arrows: true,
+                    dots: false,
+                    centerMode: true,
+                    variableWidth: true,
+                    infinite: true,
+                    focusOnSelect: true,
+                    cssEase: 'linear',
+                    touchMove: true,
+                    prevArrow:'<button class="slick-prev"> < </button>',
+                    nextArrow:'<button class="slick-next"> > </button>',
+                });              
+                
+                var imgs = $('.slider img');
+                imgs.each(function(){
+                    var item = $(this).closest('.item');
+                    item.css({
+                    'background-image': 'url(' + $(this).attr('src') + ')', 
+                    'background-position': 'center',            
+                    '-webkit-background-size': 'cover',
+                    'background-size': 'cover', 
+                    });
+                    $(this).hide();
+                });
+
+        });
+            
+    </script>
+
+</body>
+</html>
