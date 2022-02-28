@@ -346,7 +346,7 @@ nav{
 
 .service__title{
     text-align: center;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     padding: 24px;
 }
 
@@ -373,6 +373,8 @@ nav{
     margin: 0 auto;
     text-align: center;
     overflow: hidden;
+    transform: translateX(-300px);
+    z-index: 0;
 }
 
 .next__slide__btn,
@@ -382,6 +384,7 @@ nav{
     border-radius: 100%;
     height: 100px;
     width: 100px;
+    z-index: 10;
 }
 
 .prev__slide__btn{
@@ -396,11 +399,11 @@ nav{
 }
 
 .next__slide__service{
-
+    transform: translateX(354px);
 }
 
 .prev__slide__service{
-    
+    transform: translateX(-354px);    
 }
 
 .service__slider__items{
@@ -413,22 +416,21 @@ nav{
     text-align: center; 
     margin: 0 24px 0 24px ;
     border-radius: 10px;
-    border: #E0D6D1 solid 3px;
-    padding: 12px;
+    background: #333333;
 }
 
 .service__slider__items img{
     object-fit: cover;   
     height: 100%;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 10px 10px 0 0;
 }
 
 .service__slider__items__title{
     text-align: center;
     margin: auto;
     color: #E0D6D1;
-    margin-top: 12px;
+    margin: 12px;
 }
 
 
@@ -480,11 +482,15 @@ nav{
   }
   
   .carousel__image {
+    display: flex;
     background-size: cover;
     background-repeat: no-repeat;    
     height: 50%;
     margin: auto;
-
+    align-items: center;
+  }
+  .carousel__image img{
+      flex-grow: 1;
   }
 
   .carousel__image__title{
@@ -492,9 +498,52 @@ nav{
       text-align: center;
       margin: auto;
       color: #E0D6D1;
-
   }
-  
+
+
+/* Servizi CTA */
+
+.service__cta{
+    width: 100%;
+    margin: auto;
+    margin-top: 5%;
+    padding-top: 5%;  
+    padding-bottom: 5%; 
+}
+
+.service__bottoni{
+    display: flex;
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.service__btn{
+    background-color:#5C5552;
+    border: #E0D6D1 solid 2px;
+    border-radius: 5px;
+    padding: auto;
+    flex-grow: 1;
+    margin: 12px;
+    color: #E0D6D1;
+    text-transform: uppercase;
+    letter-spacing: 2;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+	transition: ease-in-out;
+    transition-duration: 0.4s;
+    min-height: 75px;
+    max-width: 330px;
+}
+
+.service__btn:hover {
+    background-color: #E0D6D1;
+    border: #5C5552 solid 2px;
+    color: #5C5552;
+}
 
 
 
