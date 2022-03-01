@@ -18,6 +18,8 @@ h5 {font-family: 'Lato', sans-serif; font-size: 25px; font-weight: 600;letter-sp
 h6 {font-family: 'Lato', sans-serif; font-size: 21px; font-weight: 700;letter-spacing: 0.15px;}
 p {font-family: 'Lato', sans-serif; font-size: 17px; font-weight: 500;letter-spacing: 0.5px;line-height: 140%;}
 a {font-family: 'Lato', sans-serif; font-size: 17px; font-weight: 500;letter-spacing: 0.5px;}
+li{font-family: 'Lato', sans-serif; font-size: 16px; font-weight: 500;letter-spacing: 0.5px; line-height: 140%;}
+
 
 @media (max-width: 768px) {
 
@@ -623,9 +625,52 @@ align-items: center;
     margin: 24px;
     transition: ease-in-out;
     transition-duration: 0.4s;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border: #333333 solid 3px;
 }
 
 .pacchetti__cards__item:hover{
     transform: scale(110%);
     background: #6b635f;
+}
+
+.pacchetti__cards__image{
+    object-fit: cover;
+    height: 100%;
+    flex-grow: 1;
+    border-radius: 10px 0 0 10px;
+    max-width: 30%;
+}
+
+.pacchetti__cards__text{
+    flex-grow: 3;
+    margin: 12px;
+    padding: 12px;
+}
+
+.pacchetti__cards__text h4{
+    text-align: center;
+    color: #E0D6D1;
+    display: block;
+}
+.pacchetti__cards__text p{
+    text-align: center;
+    color: #E0D6D1;
+    margin-top: 15%;
+}
+
+.pacchetti__cards__text__list{
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+
+.pacchetti__cards__text__list li{
+    text-align: center;
+    color: #E0D6D1;
+    flex-grow: 1;
+    margin: 6px;
+    font-weight: 700;
 }
