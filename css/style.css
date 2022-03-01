@@ -674,3 +674,36 @@ align-items: center;
     margin: 6px;
     font-weight: 700;
 }
+
+/* Pacchetti tablet*/
+
+@media (max-width: 960px){}
+
+/* Pacchetti mobile */
+
+@media (max-width: 768px) {
+
+}
+
+
+
+/* Galleria */
+
+.gallery{
+    overflow: hidden;
+    margin-top: 7%;
+    background: #5C5552;
+}
+
+.gallery__content{
+    max-width: 1140;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.gallery__title{
+    color: #E0D6D1;
+    font-size: 99px;
+}
