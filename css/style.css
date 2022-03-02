@@ -72,19 +72,18 @@ nav{
 .menu__list__item{
     flex-grow: 1;
     margin: auto;
-    padding: auto;
     text-align: right;
+    transition: ease-in-out 0.5s;
 }
 .menu__list__link{
     color: #E0D6D1;
     cursor: pointer;
-    transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.1s;
 }
-
 .menu__list__link:hover{
     color: #fff;
+    border-bottom: #E0D6D1 solid 2px;
 }
-
 .hamburger{
     display: none;
 }
@@ -279,7 +278,7 @@ nav{
 
 .poster__img{
     max-width: 50%;
-    height: 525px;
+    height: 550px;
     flex-grow: 1;
     margin: 12px;
     background-image: url(../img/hotel_baby01.JPG);
@@ -360,79 +359,53 @@ nav{
 
 /* Carousel */
 
-:root{
-    --no-of-service: 6;
-    --service-in-view: 6;
-    --service-width: 300px;
-    --service-height: 400px;
+.slider{
+    margin-top: 5%;
 }
 
-
-.service__slider__wrapper{
-    display: flex;
-    align-items: center;    
-    width: calc(var(--service-in-view) * var(--service-width));
+.slick-slide img{
     margin: 0 auto;
-    text-align: center;
-    overflow: hidden;
-    transform: translateX(-300px);
-    z-index: 0;
 }
 
-.next__slide__btn,
-.prev__slide__btn{
-    background: #E0D6D1;
-    border: #333333 solid 3px;
-    border-radius: 100%;
-    height: 100px;
-    width: 100px;
-    z-index: 10;
+.slick-list{
+    padding: 12px !important; 
 }
 
-.prev__slide__btn{
-    position: relative;
-    left: 10%;
-    top: 50;    
-}
-.next__slide__btn{
-    position: relative;
-    left: 80%; 
-    top: 450;   
-}
-
-.next__slide__service{
-    transform: translateX(354px);
-}
-
-.prev__slide__service{
-    transform: translateX(-354px);    
-}
-
-.service__slider__items{
-    display: flex;
-    flex-direction: column;    
-    flex: 0 0 auto;
-    width: var(--service-width);
-    height: var(--service-height);
-    box-sizing: border-box;
-    text-align: center; 
-    margin: 0 24px 0 24px ;
+.slider__item{
     border-radius: 10px;
-    background: #333333;
+    background: #E0D6D1;
+    margin-left: 12px;
+    margin-right: 12px;
+    max-height: 400px;
+    transition: ease-in-out;
+    transition-duration: 0.4s;
+    outline: #333333 solid 3px;
 }
 
-.service__slider__items img{
-    object-fit: cover;   
-    height: 100%;
-    width: 100%;
-    border-radius: 10px 10px 0 0;
-}
-
-.service__slider__items__title{
+.slider__item__inner{
     text-align: center;
-    margin: auto;
-    color: #E0D6D1;
-    margin: 12px;
+    width: 100%;
+}
+
+.slider__item:hover {
+    transform: scale(98%);
+}
+
+.slider__items__inner img{
+    width: 100%;
+    height: 83%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    z-index: 0;
+    outline: #333333 3px solid;
+}
+
+.slider__items__inner h4{
+    color: #333333;
+    text-align: center;
+    margin: 12px auto;
+    z-index: 10;
+    width: 100%;
 }
 
 
@@ -628,7 +601,7 @@ align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    border: #333333 solid 3px;
+    outline: #333333 solid 3px;
 }
 
 .pacchetti__cards__item:hover{
@@ -642,6 +615,7 @@ align-items: center;
     flex-grow: 1;
     border-radius: 10px 0 0 10px;
     max-width: 30%;
+    outline: #333333 solid 3px;
 }
 
 .pacchetti__cards__text{

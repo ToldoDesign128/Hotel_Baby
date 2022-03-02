@@ -19,7 +19,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
 
-    
+
+    <!-- Slick -->
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+
     <!-- Hamburger menu -->
 
     <link href="css/hamburgers.css" rel="stylesheet">
@@ -126,7 +131,7 @@
 
         <div class="poster__text">
 
-            <h3 class="poster__title">Ci presentiamo</h3>
+            <h2 class="poster__title">Ci presentiamo</h2>
 
             <p class="poster__content">In prestigiosa posizione centrale a Milano Marittima l’Hotel Baby si affaccia sul noto Viale 2 Giugno a pochi passi dalla spiaggia.</p>
             <p class="poster__content">La struttura medio piccola offre un ottimo confort per quei viaggiatori che vogliono godersi un soggiorno in puro stile romagnolo accompagnati dal piacere di sentirsi a proprio agio.</p>
@@ -150,24 +155,49 @@
 
             <div class="service__slider">
 
-                <button class="next__slide__btn"></button>
-                <button class="prev__slide__btn"></button>
+                <div class="slider">
+                    
+                    <div class="slider__item">   
+                        <div class="slider__items__inner">
+                            <img src="../Hotel_baby_2022/img/servizi/camere.jpg" alt="Camere">
+                            <h4 class="slider__items__title"> Camere </h4>
+                        </div>
+                    </div> 
 
-                <div class="service__slider__wrapper">
+                    <div class="slider__item">   
+                        <div class="slider__items__inner">
+                            <img src="../Hotel_baby_2022/img/servizi/colazione.JPG" alt="Colazione">
+                            <h4 class="slider__items__title"> Colazione </h4>
+                        </div>
+                    </div> 
 
-                    <div class="service__slider__items"> <img src="../Hotel_baby_2022/img/servizi/camere.jpg" alt="Camere"> <h4 class="service__slider__items__title"> Camere </h4></div>
-                    <div class="service__slider__items"> <img src="../Hotel_baby_2022/img/servizi/ristorante.jpg" alt="Ristorante"> <h4 class="service__slider__items__title"> Ristorante </h4></div>
-                    <div class="service__slider__items"> <img src="../Hotel_baby_2022/img/servizi/colazione.JPG" alt="Colazione"> <h4 class="service__slider__items__title"> Colazione </h4></div>
-                    <div class="service__slider__items"> <img src="../Hotel_baby_2022/img/servizi/mare.jpg" alt="Mare"> <h4 class="service__slider__items__title"> Mare </h4></div>
-                    <div class="service__slider__items"> <img src="../Hotel_baby_2022/img/servizi/relax.JPG" alt="Esperienze"> <h4 class="service__slider__items__title"> Esperienze </h4></div>
-                    <div class="service__slider__items"> <img src="../Hotel_baby_2022/img/servizi/dog.jpg" alt="Animali"> <h4 class="service__slider__items__title"> Animali </h4></div>
+                    <div class="slider__item">   
+                        <div class="slider__items__inner">
+                            <img src="../Hotel_baby_2022/img/servizi/dog.jpg" alt="Animali">
+                            <h4 class="slider__items__title"> Animali </h4>
+                        </div>
+                    </div> 
 
-                    <div class="service__slider__items"> <img src="../Hotel_baby_2022/img/servizi/camere.jpg" alt="Camere"> <h4 class="service__slider__items__title"> Camere </h4></div>
-                    <div class="service__slider__items"> <img src="../Hotel_baby_2022/img/servizi/ristorante.jpg" alt="Ristorante"> <h4 class="service__slider__items__title"> Ristorante </h4></div>
-                    <div class="service__slider__items"> <img src="../Hotel_baby_2022/img/servizi/colazione.JPG" alt="Colazione"> <h4 class="service__slider__items__title"> Colazione </h4></div>
-                    <div class="service__slider__items"> <img src="../Hotel_baby_2022/img/servizi/mare.jpg" alt="Mare"> <h4 class="service__slider__items__title"> Mare </h4></div>
-                    <div class="service__slider__items"> <img src="../Hotel_baby_2022/img/servizi/relax.JPG" alt="Esperienze"> <h4 class="service__slider__items__title"> Esperienze </h4></div>
-                    <div class="service__slider__items"> <img src="../Hotel_baby_2022/img/servizi/dog.jpg" alt="Animali"> <h4 class="service__slider__items__title"> Animali </h4></div>
+                    <div class="slider__item">   
+                        <div class="slider__items__inner">
+                            <img src="../Hotel_baby_2022/img/servizi/mare.jpg" alt="Mare">
+                            <h4 class="slider__items__title"> Mare </h4>
+                        </div>
+                    </div> 
+
+                    <div class="slider__item">   
+                        <div class="slider__items__inner">
+                            <img src="../Hotel_baby_2022/img/servizi/relax.JPG" alt="Relax">
+                            <h4 class="slider__items__title"> Relax </h4>
+                        </div>
+                    </div> 
+
+                    <div class="slider__item">   
+                        <div class="slider__items__inner">
+                            <img src="../Hotel_baby_2022/img/servizi/ristorante.jpg" alt="Ristorante">
+                            <h4 class="slider__items__title"> Ristorante </h4>
+                        </div>
+                    </div> 
 
                 </div>
 
@@ -401,6 +431,18 @@
                 $hamburger.toggleClass("is-active");
             // Do something else, like open/close menu
             });
+
+    </script>
+
+
+    <!--Slick carousel-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+			
+    <script>
+        $(".slider").slick({
+            centerMode: true,
+            slidesToShow: 3
+        });
 
     </script>
 
