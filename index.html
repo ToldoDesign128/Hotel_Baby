@@ -585,13 +585,13 @@
 
                 <h2> Hotel Baby </h2>
                 <a href="https://www.google.it/maps/place/Hotel+Baby/@44.2738988,12.352051,18.94z/data=!4m16!1m7!3m6!1s0x132cb47358078b7f:0x1cc712f102a89ddf!2sViale+Due+Giugno,+53,+48015+Cervia+RA!3b1!8m2!3d44.2737512!4d12.3521595!3m7!1s0x132cb473596c5cdb:0x632f586f981abad1!5m2!4m1!1i2!8m2!3d44.2737512!4d12.3521595" class="footer__adress">
-                    <p> Viale Italia 167- Pinarella di cervia (RA) </p>
+                    <h6> Viale Italia 167- Pinarella di cervia (RA) </h6>
                 </a>
                 <a href="#" class="footer__cookie">
-                    <p> Privacy & Cookie </p>
+                    <h6> Privacy & Cookie </h6>
                 </a>
                 <a href="#" class="#">
-                    <p> WhatsApp </p>
+                    <h6> WhatsApp </h6>
                 </a>
 
             </div>   
@@ -600,10 +600,10 @@
 
                 <h2> Contatti </h2>
                 <a href="#">
-                    <p>  info@lavillapinarella.it </p>
+                    <h6>  info@lavillapinarella.it </h6>
                 </a>
                 <a href="#">
-                    <p> +39 05489614 </p>
+                    <h6> +39 05489614 </h6>
                 </a>
 
                 <div class="social__icon">
@@ -683,14 +683,36 @@
     <script>
         $(".slider").slick({
             centerMode: true,
-            slidesToShow: 3
+            slidesToShow: 3,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                }
+            ]
         });
 
         $(".gallery__slider").slick({
             centerMode: true,
             slidesToShow: 3,
             autoplay: true,
-            autoplaySpeed: 2000
+            autoplaySpeed: 2000,
+            responsive: [
+                {
+                    breakpoint: 960,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                }
+            ]
         });
 
     </script>
