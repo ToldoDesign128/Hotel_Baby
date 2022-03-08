@@ -86,7 +86,6 @@ nav{
 }
 .menu__list__link:hover{
     color: #fff;
-    border-bottom: #E0D6D1 solid 2px;
 }
 .hamburger{
     display: none;
@@ -200,6 +199,7 @@ nav{
     z-index: 10;
 }
 .btn{
+    cursor: pointer;
     background-color:#5C5552;
     border: #E0D6D1 solid 2px;
     border-radius: 5px;
@@ -522,6 +522,7 @@ align-items: center;
     justify-content: center;
 }
 .service__btn{
+    cursor: pointer;
     background-color:#5C5552;
     border: #E0D6D1 solid 2px;
     border-radius: 5px;
@@ -538,6 +539,7 @@ align-items: center;
     transition-duration: 0.4s;
     min-height: 75px;
     max-width: 330px;
+    min-width: 300px;
 }
 .service__btn:hover {
     background-color: #E0D6D1;
@@ -590,6 +592,9 @@ align-items: center;
     .service__bottoni{
         flex-direction: column;
         justify-content: center;
+    }
+    .service__bottoni a{
+        text-align: center;
     }
     .service__btn{
         min-width: 330px;
@@ -793,15 +798,12 @@ align-items: center;
 }
 .contact__cta{
     text-align: center;
+    margin-top: 12px;
     margin-left: 24px;
     display: flex;
     flex-direction: column;
     justify-content: end;
     align-items: center;
-}
-.contact__cta h4{
-    flex-grow: 1;
-    width: 60%;
 }
 .contact__bottoni{
     display: flex;
@@ -812,6 +814,7 @@ align-items: center;
     align-items: center;
 }
 .contact__btn{
+    cursor: pointer;
     background-color:#E0D6D1;
     border: #5C5552 solid 2px;
     border-radius: 5px;
