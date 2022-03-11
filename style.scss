@@ -1,0 +1,29 @@
+/*
+Theme Name: Hotel Baby
+Theme URI: 
+Author: Federico Toldo 
+Author URI: 
+Description: Official custom WP theme for Hotel Baby Milano Marittima
+Version: 2.1
+*/
+
+
+//variables
+@import "css-parts/variables/color"; 
+
+//base
+@import "css-parts/base.scss"; 
+
+ 
+//blocks
+@import "css-parts/blocchi/contact";
+@import "css-parts/blocchi/404";
+@import "css-parts/blocchi/footer";
+@import "css-parts/blocchi/gallery"; 
+@import "css-parts/blocchi/hero";
+@import "css-parts/blocchi/map";
+@import "css-parts/blocchi/nav";
+@import "css-parts/blocchi/package"; 
+@import "css-parts/blocchi/poster";
+@import "css-parts/blocchi/service";
+
