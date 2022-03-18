@@ -6,11 +6,44 @@ Author URI:
 Description: Official custom WP theme for Hotel Baby Milano Marittima
 Version: 2.1
 */
+/*water-green
+
+$color-primary: #dbfbed;
+$color-secondary: #046865;
+$color-secondary-hover: #21a0a0;
+$color-third: #214540;
+$color-white: #fff;
+$color-text: rgb(15, 15, 15); */
+/*petrolio
+
+$color-primary: #f3f7f6;
+$color-secondary: #354f52;
+$color-secondary-hover: #52796f;
+$color-third: #2f3e46;
+$color-white: #fff;
+$color-text: rgb(15, 15, 15);*/
+/*salvia
+
+$color-primary: #f4f6f4;
+$color-secondary: #73877b;
+$color-secondary-hover: #839788;
+$color-third: #38433a;
+$color-white: #fff;
+$color-text: rgb(15, 15, 15);*/
+/*blu*/
+/*blu - rosa
+
+$color-primary: #fec7d7;
+$color-secondary: #3f61af;
+$color-secondary-hover: #507bdd;
+$color-third: #17274b;
+$color-white: #fff;
+$color-text: rgb(15, 15, 15);*/
 /* ! Base */
 html, body {
   margin: 0;
   overflow-x: hidden;
-  background-color: #E0D6D1;
+  background-color: #fef6e4;
 }
 
 h1, h2, h3, h4, h5, h6, p, li, ul, a {
@@ -202,14 +235,14 @@ li {
 
 .contact__btn {
   cursor: pointer;
-  background-color: #E0D6D1;
-  border: #5C5552 solid 2px;
+  background-color: #fef6e4;
+  border: #172c66 solid 2px;
   border-radius: 5px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   margin: 12px;
-  color: #5C5552;
+  color: #172c66;
   text-transform: uppercase;
   letter-spacing: 2;
   font-family: 'Lato', sans-serif;
@@ -225,9 +258,9 @@ li {
 }
 
 .contact__btn:hover {
-  background-color: #5C5552;
-  border: #E0D6D1 solid 2px;
-  color: #E0D6D1;
+  background-color: #172c66;
+  border: #fef6e4 solid 2px;
+  color: #fef6e4;
 }
 
 #invia {
@@ -321,7 +354,7 @@ li {
 }
 
 .footer__left h2 {
-  color: #333333;
+  color: #001858;
   margin-bottom: 5%;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -333,7 +366,7 @@ li {
       -ms-flex-positive: 1;
           flex-grow: 1;
   margin: 12px;
-  color: #333333;
+  color: #001858;
 }
 
 .footer__right {
@@ -353,7 +386,7 @@ li {
 }
 
 .footer__right h2 {
-  color: #333333;
+  color: #001858;
   margin-bottom: 5%;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -365,7 +398,7 @@ li {
       -ms-flex-positive: 1;
           flex-grow: 1;
   margin: 12px;
-  color: #333333;
+  color: #001858;
 }
 
 .social__icon svg {
@@ -379,7 +412,7 @@ li {
 }
 
 .credits {
-  background: #5C5552;
+  background: #172c66;
   padding: 24px;
   text-align: center;
 }
@@ -390,7 +423,7 @@ li {
 }
 
 .credits__content h6 {
-  color: #E0D6D1;
+  color: #fef6e4;
   letter-spacing: 1;
   font-weight: 400;
 }
@@ -428,7 +461,7 @@ li {
 .gallery {
   overflow: hidden;
   margin-top: 7%;
-  background: #5C5552;
+  background: #172c66;
 }
 
 .gallery__content {
@@ -444,7 +477,7 @@ li {
 }
 
 .gallery__title {
-  color: #E0D6D1;
+  color: #fef6e4;
   font-size: 99px;
 }
 
@@ -458,7 +491,7 @@ li {
   margin-left: 12px;
   margin-right: 12px;
   max-height: 500px;
-  outline: #333333 solid 3px;
+  outline: #001858 solid 3px;
 }
 
 .gallery__item__inner {
@@ -473,7 +506,7 @@ li {
      object-fit: cover;
   border-radius: 10px;
   z-index: 0;
-  outline: #333333 3px solid;
+  outline: #001858 3px solid;
 }
 
 /* Galleria tablet*/
@@ -503,8 +536,8 @@ li {
   overflow: hidden;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-filter: brightness(0.4);
-          filter: brightness(0.4);
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
 }
 
 .hero__content {
@@ -525,7 +558,7 @@ li {
 
 .hero__text {
   max-width: 744px;
-  color: #E0D6D1;
+  color: #fef6e4;
   z-index: 1;
   padding: 12px;
   margin-top: 20%;
@@ -546,15 +579,15 @@ li {
 
 .btn {
   cursor: pointer;
-  background-color: #5C5552;
-  border: #E0D6D1 solid 2px;
+  background-color: #172c66;
+  border: #fef6e4 solid 2px;
   border-radius: 5px;
   padding: auto;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   margin: 12px;
-  color: #E0D6D1;
+  color: #fef6e4;
   text-transform: uppercase;
   letter-spacing: 2;
   font-family: 'Lato', sans-serif;
@@ -569,9 +602,9 @@ li {
 }
 
 .btn:hover {
-  background-color: #E0D6D1;
-  border: #5C5552 solid 2px;
-  color: #5C5552;
+  background-color: #fef6e4;
+  border: #172c66 solid 2px;
+  color: #172c66;
 }
 
 /* Hero tablet */
@@ -628,7 +661,7 @@ li {
 
 /* Mappa */
 .map {
-  background-color: #5C5552;
+  background-color: #172c66;
   padding-top: 5%;
   width: 100%;
 }
@@ -645,7 +678,7 @@ li {
 }
 
 .map__title h2 {
-  color: #E0D6D1;
+  color: #fef6e4;
 }
 
 .map__inner iframe {
@@ -674,9 +707,9 @@ iframe {
 header {
   position: fixed;
   width: 100%;
-  background-color: #5C5552;
-  -webkit-box-shadow: 0px 0px 10px 1px #333333;
-          box-shadow: 0px 0px 10px 1px #333333;
+  background-color: #172c66;
+  -webkit-box-shadow: 0px 0px 10px 1px #001858;
+          box-shadow: 0px 0px 10px 1px #001858;
   padding: auto;
   z-index: 1000;
 }
@@ -701,7 +734,7 @@ nav {
 }
 
 .menu__logo__link {
-  color: #E0D6D1;
+  color: #fef6e4;
   text-transform: uppercase;
   text-align: left;
   font-weight: 700;
@@ -729,7 +762,7 @@ nav {
 }
 
 .menu__list__link {
-  color: #E0D6D1;
+  color: #fef6e4;
   cursor: pointer;
   -webkit-transition: ease-in-out 0.1s;
   transition: ease-in-out 0.1s;
@@ -819,7 +852,7 @@ nav {
 }
 
 .pacchetti__title {
-  color: #333333;
+  color: #001858;
 }
 
 .pacchetti__cards {
@@ -841,7 +874,7 @@ nav {
 }
 
 .pacchetti__cards__item {
-  background: #5C5552;
+  background: #172c66;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -863,13 +896,13 @@ nav {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  outline: #333333 solid 3px;
+  outline: #001858 solid 3px;
 }
 
 .pacchetti__cards__item:hover {
   -webkit-transform: scale(110%);
           transform: scale(110%);
-  background: #6b635f;
+  background: #001858;
 }
 
 .pacchetti__cards__image {
@@ -881,7 +914,7 @@ nav {
           flex-grow: 1;
   border-radius: 10px 0 0 10px;
   max-width: 30%;
-  outline: #333333 solid 3px;
+  outline: #001858 solid 3px;
 }
 
 .pacchetti__cards__text {
@@ -894,13 +927,13 @@ nav {
 
 .pacchetti__cards__text h4 {
   text-align: center;
-  color: #E0D6D1;
+  color: #fef6e4;
   display: block;
 }
 
 .pacchetti__cards__text p {
   text-align: center;
-  color: #E0D6D1;
+  color: #fef6e4;
   margin-top: 15%;
 }
 
@@ -917,7 +950,7 @@ nav {
 
 .pacchetti__cards__text__list li {
   text-align: center;
-  color: #E0D6D1;
+  color: #fef6e4;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -994,7 +1027,7 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
-  border: #5C5552 solid 3px;
+  border: #172c66 solid 3px;
 }
 
 .poster__text {
@@ -1007,7 +1040,7 @@ nav {
 }
 
 .poster__title {
-  color: #333333;
+  color: #001858;
   margin-bottom: 10%;
 }
 
@@ -1056,7 +1089,7 @@ nav {
 /* Servizi */
 .service {
   margin-top: 10%;
-  background: #5C5552;
+  background: #172c66;
 }
 
 .service__content {
@@ -1071,7 +1104,7 @@ nav {
 }
 
 .service__title__text {
-  color: #E0D6D1;
+  color: #fef6e4;
   text-align: center;
   font-size: 72px;
 }
@@ -1092,7 +1125,7 @@ nav {
 
 .slider__item {
   border-radius: 10px;
-  background: #E0D6D1;
+  background: #fef6e4;
   margin-left: 12px;
   margin-right: 12px;
   max-height: 400px;
@@ -1115,7 +1148,7 @@ nav {
 }
 
 .slider__items__inner h4 {
-  color: #333333;
+  color: #001858;
   text-align: center;
   margin: 12px auto;
   z-index: 10;
@@ -1145,7 +1178,7 @@ nav {
   width: 100px;
   height: 100px;
   padding: 12px;
-  border: #5C5552 solid;
+  border: #172c66 solid;
   color: rgba(0, 0, 0, 0);
   -webkit-transition: ease-in-out;
   transition: ease-in-out;
@@ -1266,7 +1299,7 @@ nav {
   max-width: 100px;
   text-align: center;
   margin: auto;
-  color: #E0D6D1;
+  color: #fef6e4;
 }
 
 /* Servizi CTA */
@@ -1296,15 +1329,15 @@ nav {
 
 .service__btn {
   cursor: pointer;
-  background-color: #5C5552;
-  border: #E0D6D1 solid 2px;
+  background-color: #172c66;
+  border: #fef6e4 solid 2px;
   border-radius: 5px;
   padding: auto;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   margin: 12px;
-  color: #E0D6D1;
+  color: #fef6e4;
   text-transform: uppercase;
   letter-spacing: 2;
   font-family: 'Lato', sans-serif;
@@ -1320,9 +1353,9 @@ nav {
 }
 
 .service__btn:hover {
-  background-color: #E0D6D1;
-  border: #5C5552 solid 2px;
-  color: #5C5552;
+  background-color: #fef6e4;
+  border: #172c66 solid 2px;
+  color: #172c66;
 }
 
 /* Servizi tablet*/
